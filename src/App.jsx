@@ -77,7 +77,6 @@ export default function () {
     setFormFields(initialFormValues);
     setErrors({});
     setIsChecked(false);
-    setIsSuccess(false);
   };
 
   return (
