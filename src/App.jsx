@@ -66,6 +66,7 @@ export default function () {
 
     if (Object.keys(displayError).length === 0) {
       setIsSuccess(true);
+      resetForm();
 
       setTimeout(() => {
         setIsSuccess(false);
@@ -84,7 +85,6 @@ export default function () {
         onSubmit={(e) => {
           e.preventDefault();
           errorHandler();
-          resetForm();
         }}
       >
         <h1>Contact us</h1>
