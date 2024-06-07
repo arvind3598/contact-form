@@ -75,6 +75,9 @@ export default function () {
 
   const resetForm = () => {
     setFormFields(initialFormValues);
+    setErrors({});
+    setIsChecked(false);
+    setIsSuccess(false);
   };
 
   return (
